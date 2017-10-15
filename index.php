@@ -7,8 +7,9 @@ And Modified by Farzain - zFz ( Faraaz )
 */
 require_once('./line_class.php');
 
-$channelAccessToken = 'v9Km7eK9SuCQgSWDs5Vy+jaL+fqYjNZWi2hpwV/5atjDMX89NXZGZmfA0w1pqMs/CEYp8fHB1jYnCtxUbHmvoplgA7ObdVl+Mz5j2TF+u2bmMRKORV4WuxBFIHUc7WqJjdbKPHwoGkerlwKRKPp8BwdB04t89/1O/w1cDnyilFU='; //Your Channel Access Token
-$channelSecret = 'cc363f3393e28f0a72d7dd5d2d949cbb';//Your Channel Secret
+$channelAccessToken = 'fXOz93b1fW/COGn1A9OGVYBeiun2P6c35Qcz69D6vCZlKKebbX70NSkQMZ5+nMo0cwjCUvswp08KRiuKUEvRgZCapKIrnqXXLFnF+9kK85CQHXMel4Zu+/oiN9nJkz8vrhQD1wM99Vod/Y74j3haEgdB04t89/1O/w1cDnyilFU=
+'; //Your Channel Access Token
+$channelSecret = 'c6aca5a1240d32efa1bd201aab4a9435';//Your Channel Secret
 
 $client = new LINEBotTiny($channelAccessToken, $channelSecret);
 
@@ -35,7 +36,7 @@ if($message['type']=='sticker')
 }
 else
 $pesan=str_replace(" ", "%20", $pesan_datang);
-$key = '671daf8c-3f4b-4cd3-9c49-3301585e8a5a'; //API SimSimi
+$key = '7575a8ff-00d1-4e9c-98e4-d962e708ec42'; //API SimSimi
 $url = 'http://sandbox.api.simsimi.com/request.p?key='.$key.'&lc=id&ft=1.0&text='.$pesan;
 $json_data = file_get_contents($url);
 $url=json_decode($json_data,1);
